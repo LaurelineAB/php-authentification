@@ -1,13 +1,26 @@
-<form method="POST" action="index.php">
-    <label for="firstName">First Name</label>
-    <input type="text" name="firstName" id="firstName"/>
-    <label for="lastName">Last Name</label>
-    <input type="text" name="lastName" id="lastName"/>
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email"/>
-    <label for="password">Password</label>
-    <input type="password" name="password" id="password"/>
-    <label for="confirmPassword">Confirm Password</label>
-    <input type="password" name="confirmPassword" id="confirmPassword"/>
-    <input type="hidden" name="formName" id="formName"/>
+<form method="POST" action="../../index.php" id="registerForm">
+    <fieldset>
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" id="firstName" required/>
+    </fieldset>
+    <fieldset>
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" id="lastName" required/>
+    </fieldset>
+    <fieldset>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required/>
+    </fieldset>
+    <fieldset>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required/>
+    </fieldset>
+    <fieldset>
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" name="confirmPassword" id="confirmPassword" required/>
+    </fieldset>
+    <fieldset>
+        <input type="submit" name="submit" id="submit" value="Créer un compte"/>
+    </fieldset>
+        <input type="hidden" name="formName" id="formName" value="registerForm"/>
 </form>
