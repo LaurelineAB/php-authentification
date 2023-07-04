@@ -10,7 +10,7 @@ function checkroute(string $route)  : void
     {
         require "./pages/register.php";
     }
-    if ($route === "mon-compte")
+    if ($route === "mon-compte" && (isset($_SESSION["user"])))
     {
         require "./pages/account.php";
     }
